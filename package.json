@@ -1,0 +1,31 @@
+{
+  "name": "clarkbook",
+  "version": "0.0.1",
+  "description": "Facebook clone made for fun",
+  "main": "server.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ClarkGH/clarkbook.git"
+  },
+  "keywords": [
+    "facebook",
+    "clone",
+    "nodejs",
+    "expressjs",
+    "react",
+    "redux",
+    "mongodb"
+  ],
+  "author": "Clark Hinchcliff",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ClarkGH/clarkbook/issues"
+  },
+  "homepage": "https://github.com/ClarkGH/clarkbook#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}
