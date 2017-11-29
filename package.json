@@ -4,6 +4,7 @@
   "description": "Facebook clone made for fun",
   "main": "server.js",
   "scripts": {
+    "start": "nodemon server.js",
     "test": "test"
   },
   "repository": {
