@@ -15,11 +15,6 @@ module.exports = {
     path: paths.DIST,
     filename: 'app.bundle.js',
   },
-  plugins: [
-    new HtmlWebpackPlugin({
-      template: path.join(paths.SRC, 'index.html'),
-    }),
-  ],
   // Loaders
   module: {
     rules: [
