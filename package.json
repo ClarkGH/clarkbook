@@ -4,6 +4,8 @@
   "description": "Facebook clone made for fun",
   "main": "server.js",
   "scripts": {
+    "build": "webpack",
+    "dev": "webpack-dev-server",
     "start": "nodemon server.js",
     "test": "test"
   },
@@ -36,6 +38,7 @@
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
     "babel-preset-es2017": "^6.24.1",
     "babel-preset-react": "^6.24.1"
   }
