@@ -2,7 +2,7 @@ var express = require('express'),
   app = express(),
   path = require('path');
 
-app.use(express.static('./src/'))
+app.use(express.static('./dist/'))
 
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname + '/src/index.html'));
