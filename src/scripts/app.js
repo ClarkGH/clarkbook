@@ -4,14 +4,17 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import styled, { css, injectGlobal } from 'react-emotion';
 
-const app = document.getElementById('root');
+const Container = styled('div')`
+  background: #333;
+`
+
 const mainStyles = css`
   color: blue;
 `
 
-app.classList.add(mainStyles);
-
 ReactDOM.render(
-  <div>Hi</div>,
+  <Container>
+    <div className={mainStyles}>Hello World!</div>
+  </Container>,
   document.getElementById('root')
 );
