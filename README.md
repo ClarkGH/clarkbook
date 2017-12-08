@@ -5,4 +5,7 @@ Facebook clone using React/Redux for proof of concept
 
 1. Node/Express
 2. Yarn
-3. HTML/CSS3/Javascript
+3. HTML/Javascript
+4. Gulp
+5. CSS-in-JS via EmotionJS
+6. Webpack/Babel

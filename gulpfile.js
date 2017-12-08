@@ -4,12 +4,12 @@ const gulp = require('gulp'),
   webpackConfig = require('./webpack.config.js');
 
 gulp.task('copy', () => {
-  gulp.src('index.html')
-  .pipe(gulp.dest('dist'))
+  gulp.src('./src/index.html')
+  .pipe(gulp.dest('./dist'))
 });
 
 gulp.task('js', () => {
-  gulp.src('./src/scripts/index.js')
+  gulp.src('./src/scripts/app.js')
     .pipe(webpackStream(webpackConfig), webpack)
     .pipe(gulp.dest('./dist'));
 });

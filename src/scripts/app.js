@@ -13,20 +13,18 @@ html,body{
 }
 `;
 
-// Specific styles
+// Specific Container styles
 const Container = styled('div')`
-  background: #333;
 `
-
+// Component className styles
 const mainStyles = css`
-  color: blue;
+
 `
 
 
 ReactDOM.render(
   <Container>
     <div className={mainStyles}>Hello World!</div>
-    <p>Will it blend?</p>
   </Container>,
   document.getElementById('root')
 );
