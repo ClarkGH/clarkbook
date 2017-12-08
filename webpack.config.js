@@ -1,5 +1,4 @@
-const path = require('path'),
-  HtmlWebpackPlugin = require('html-webpack-plugin');
+const path = require('path');
 
 // Path Constants
 const paths = {
