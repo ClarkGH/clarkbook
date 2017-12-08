@@ -26,6 +26,7 @@ const mainStyles = css`
 ReactDOM.render(
   <Container>
     <div className={mainStyles}>Hello World!</div>
+    <p>Will it blend?</p>
   </Container>,
   document.getElementById('root')
 );
