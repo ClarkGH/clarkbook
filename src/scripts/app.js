@@ -3,6 +3,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import styled, { css, injectGlobal/*, fontFace*/ } from 'react-emotion';
+import { Header } from './components/Header';
+import { Footer } from './components/Footer'
+
 
 // Global Styles
 injectGlobal`
@@ -24,7 +27,9 @@ const mainStyles = css`
 
 ReactDOM.render(
   <Container>
-    <div className={mainStyles}>Hello World!</div>
+    <Header />
+    <div>Body stuff here (will need if-else logic)</div>
+    <Footer />
   </Container>,
   document.getElementById('root')
 );
