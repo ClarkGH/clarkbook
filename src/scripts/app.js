@@ -1,8 +1,10 @@
-'use strict'
+"use strict";
 
-import React from 'react';
-import ReactDOM from 'react-dom';
-import styled, { css, injectGlobal/*, fontFace*/ } from 'react-emotion';
+import React from "react";
+import ReactDOM from "react-dom";
+import styled, { css, injectGlobal } from "react-emotion";
+import { Header } from "./components/Header";
+import { Footer } from "./components/Footer";
 
 // Global Styles
 injectGlobal`
@@ -14,17 +16,15 @@ html,body{
 `;
 
 // Specific Container styles
-const Container = styled('div')`
-`
+const Container = styled("div")``; //styles in the backticks
 // Component className styles
-const mainStyles = css`
-
-`
-
+const mainStyles = css``; //styles in the backticks
 
 ReactDOM.render(
   <Container>
-    <div className={mainStyles}>Hello World!</div>
+    <Header />
+    <div>Body stuff here (will need if-else logic)</div>
+    <Footer />
   </Container>,
-  document.getElementById('root')
+  document.getElementById("root")
 );
