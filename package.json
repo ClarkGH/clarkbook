@@ -12,7 +12,14 @@
     "type": "git",
     "url": "git+https://github.com/ClarkGH/clarkbook.git"
   },
-  "keywords": ["facebook", "clone", "nodejs", "expressjs", "react", "redux"],
+  "keywords": [
+    "facebook",
+    "clone",
+    "nodejs",
+    "expressjs",
+    "react",
+    "redux"
+  ],
   "author": "Clark Hinchcliff",
   "license": "MIT",
   "bugs": {
@@ -31,6 +38,12 @@
     "webpack-stream": "^4.0.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.0.0-beta.35",
+    "@babel/preset-env": "^7.0.0-beta.35",
+    "babel-loader": "8.0.0-beta.0",
+    "babel-plugin-emotion": "^8.0.12",
+    "babel-plugin-transform-async-to-generator": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
     "jest": "^21.2.1"
   }
 }
