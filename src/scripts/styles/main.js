@@ -10,6 +10,6 @@ html,body{
 `;
 
 // Specific Container styles
-const Container = styled("div")``; //styles in the backticks
+export const containerStyle = css``; //styles in the backticks
 // Component className styles
 const mainStyles = css``; //styles in the backticks
