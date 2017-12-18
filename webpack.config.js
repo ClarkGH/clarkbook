@@ -9,7 +9,7 @@ const paths = {
 
 // Webpack configuration
 module.exports = {
-  entry: path.join(paths.SCRIPTS, "app.js"),
+  entry: path.join(paths.SCRIPTS, "index.js"),
   output: {
     path: paths.DIST,
     filename: "app.bundle.js"

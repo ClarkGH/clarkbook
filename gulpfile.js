@@ -9,7 +9,7 @@ gulp.task('copy', () => {
 });
 
 gulp.task('js', () => {
-  gulp.src('./src/scripts/app.js')
+  gulp.src('./src/scripts/index.js')
     .pipe(webpackStream(webpackConfig), webpack)
     .pipe(gulp.dest('./dist'));
 });
