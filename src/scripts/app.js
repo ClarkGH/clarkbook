@@ -8,10 +8,10 @@ import { Header } from "./components/Header";
 import { Footer } from "./components/Footer";
 
 ReactDOM.render(
-  <Container>
+  <div>
     <Header />
     <div>Body stuff here (will need if-else logic)</div>
     <Footer />
-  </Container>,
+  </div>,
   document.getElementById("root")
 );
