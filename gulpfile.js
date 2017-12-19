@@ -16,4 +16,4 @@ gulp.task('js', () => {
 
 
 gulp.task('default', ['copy', 'js']);
-gulp.watch('src/scripts/*', ['js']);
+gulp.watch('src/scripts/**', ['js']);
