@@ -2,32 +2,29 @@ import React from 'react';
 import styled, { css } from 'react-emotion';
 
 const Nav = styled('nav') `
-  background: #fef;
+  align-items: center;
+  background: #eee;
+  display: flex;
   height: 100px;
+  justify-content: space-between;
   width: 100%;
 `
-const floatL = css`
-  float: left;
-`
 
-const floatR = css `
-  float: right;
-`
 
 export class Header extends React.Component {
   render() {
     return(
       <Nav>
-        <h1 className={floatL}>Logo</h1>
-        <form className={floatR}>
+        <h1>Logo</h1>
+        <form>
           <table cellSpacing="0" role="presentation">
             <tbody>
               <tr> 
                 <td> 
-                  <label for="email">Email</label>
+                  <label htmlFor="email">Email</label>
                 </td>
                 <td> 
-                  <label for="pass">Password</label>
+                  <label htmlFor="pass">Password</label>
                 </td>
               </tr>
               <tr> 
