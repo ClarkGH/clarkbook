@@ -6,16 +6,37 @@ export class Header extends React.Component {
       <nav>
         <h1 className="logo">Logo</h1>
         <form>
-          <label>
-            Email:
-            <input type="email" name="email" />
-          </label>
-          <label>
-            Password:
-            <input type="password" minLength="8" maxLength="32"/>
-          </label>
-          <a href="#">Forgot Password?</a>
-          <input type="submit" value="Submit"/>
+          <table cellSpacing="0" role="presentation">
+            <tbody>
+              <tr> 
+                <td> 
+                  <label for="email">Email</label>
+                </td>
+                <td> 
+                  <label for="pass">Password</label>
+                </td>
+              </tr>
+              <tr> 
+                <td> 
+                  <input type="email" name="email" id="email" tabIndex="1"/>
+                </td>
+                <td> 
+                  <input type="password" name="pass" id="pass" tabIndex="2"/>
+                </td>
+                <td> 
+                  <input type="submit" name="login" id="loginButton"/>
+                </td>                
+              </tr>
+              <tr>
+                <td></td>
+                <td>
+                  <div>
+                    <a href="#">Forgot Account?</a>
+                  </div>
+                </td>                
+              </tr>
+            </tbody>
+          </table>
         </form>
       </nav>
     );
