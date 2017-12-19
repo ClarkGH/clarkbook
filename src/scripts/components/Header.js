@@ -1,11 +1,25 @@
 import React from 'react';
+import styled, { css } from 'react-emotion';
+
+const Nav = styled('nav') `
+  background: #fef;
+  height: 100px;
+  width: 100%;
+`
+const floatL = css`
+  float: left;
+`
+
+const floatR = css `
+  float: right;
+`
 
 export class Header extends React.Component {
   render() {
     return(
-      <nav>
-        <h1 className="logo">Logo</h1>
-        <form>
+      <Nav>
+        <h1 className={floatL}>Logo</h1>
+        <form className={floatR}>
           <table cellSpacing="0" role="presentation">
             <tbody>
               <tr> 
@@ -38,7 +52,7 @@ export class Header extends React.Component {
             </tbody>
           </table>
         </form>
-      </nav>
+      </Nav>
     );
   }
 }
