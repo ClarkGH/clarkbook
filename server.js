@@ -1,6 +1,7 @@
-var express = require('express'),
+const express = require('express'),
   app = express(),
-  path = require('path');
+  path = require('path'),
+  mongoose = require('mongoose');
 
 app.use(express.static('./dist/'))
 
